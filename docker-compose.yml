@@ -3,6 +3,7 @@ version: '2'
 services:
   web:
     build: .
+    restart: unless-stopped
     ports:
       - 9000:9000
     environment:

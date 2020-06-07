@@ -24,6 +24,11 @@ Github webhook secret.
     - /path/to/app:/app
     ```
 
+## Build
+
+1) `docker-compose build`
+2) `docker-compose up -d`
+
 ## Usage
 
 Start the docker container and ensure requests are routed appropriately.
