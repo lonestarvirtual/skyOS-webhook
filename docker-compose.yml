@@ -11,7 +11,7 @@ services:
       DOCKER_PASSWORD: password
     volumes:
       # REPLACE WITH PATH TO APP
-      - /path/to/app/with/docker-compose.yml:/app
+      - /path/to/app/name/docker-compose.yml:/app/name
       # REPLACE WITH PATH TO APP
       - ./hooks.json:/etc/webhook/hooks.json
       - ./scripts:/opt/scripts
