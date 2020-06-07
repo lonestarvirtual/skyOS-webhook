@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  web:
+    build: .
+    ports:
+      - 9000:9000
+    environment:
+      DOCKER_USERNAME: username
+      DOCKER_PASSWORD: password
+    volumes:
+      # REPLACE WITH PATH TO APP
+      - /path/to/app/with/docker-compose.yml:/app
+      # REPLACE WITH PATH TO APP
+      - ./hooks.json:/etc/webhook/hooks.json
+      - ./scripts:/opt/scripts
+      - /var/run/docker.sock:/var/run/docker.sock
